@@ -1,0 +1,29 @@
+body {
+    -webkit-animation: colorchange 10s infinite; 
+    animation: colorchange 10s infinite;
+}
+a {
+    font-size: 200%;
+}
+.but {
+	height:200px;
+    width:200px;
+	font-size: 40px;
+}
+@-webkit-keyframes colorchange {
+     0%  {background: #9B59B6;}
+    25%  {background: #78281F;}
+    50%  {background: #639b43;}
+    75%  {background: #DC7633;}
+    100% {background: #9B59B6;}
+}
+@keyframes colorchange {
+     0%  {background: #9B59B6;}
+    25%  {background: #78281F;}
+    50%  {background: #639b43;}
+    75%  {background: #DC7633;}
+    100% {background: #9B59B6;}
+}   
+h1 {
+	font-size: 300%
+}
