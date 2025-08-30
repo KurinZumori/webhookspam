@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webhook Tools Onlin</title>
+    <title>Webhook Tools Online</title>
 	<link href="webhook-style.css" rel="stylesheet">
   </head>
   <body>
@@ -13,19 +13,22 @@
 	<input id="webhookurl" value="Input Webhook URL"></input>
 	<input id="username" value="NUGGET•nugg3tman"></input>
 	<input id="avatar" value="https://i.pinimg.com/736x/fe/48/2b/fe482ba879ed72d85ef81eb28219088d.jpg"></input>
-	<input id="message" value="🚨🚨🚨 **ALERT** 🚨🚨🚨  
 
-🍗⚠️ **[Nugget is here!](https://tenor.com/view/hacker-typing-hacking-computer-codes-gif-17417874)**  
+	<!-- Đổi input thành textarea để xuống dòng -->
+	<textarea id="message" rows="10" cols="50">🚨🚨🚨 **ALERT** 🚨🚨🚨  
+
+🍗⚠️ **Nugget is here!**  
 🔍👁️ Detected: **Webhook compromised!**  
 ⚠️🚫 Possible: *Phishing / Exposed*  
 
 💥🔥 **Action Required:**  
 ➡️ 🗑️ DELETE IMMEDIATELY!  
 
-🥷🍗 **[JOIN MY NUGGET GANG](https://discord.gg/mXwtGhtDwE)** 🍗🥷"></input>
-	<br>
-	<br>
-	<button class="but" id="spammer" onclick="toggle()" value="OFF">Unlimeted Spam</button>
+🥷🍗 **JOIN MY NUGGET GANG** 🍗🥷
+</textarea>
+
+	<br><br>
+	<button class="but" id="spammer" onclick="toggle()" value="OFF">Unlimited Spam</button>
     <div class="alert">
 	<h2>Refresh to stop Spamming!</h2>
 	<h1>Webhook Deleter</h1>
@@ -34,7 +37,6 @@
       <button onclick="deletewebhook()">Click to delete</button>
     <script>
           function deletewebhook() {
-            console.log(document.getElementsByName('deleteurl'))
             var deleteurl = document.getElementById("deleteurl").value;
             $.ajax({
               type: "DELETE",
@@ -64,17 +66,10 @@
     }
 	function toggle()
 {
-  const int = setInterval(sending, 5)
-	function spam() {
-	int
-	}
+  const int = setInterval(sending, 1000) // chỉnh 1000ms = 1s để dễ nhìn
   if(document.getElementById("spammer").value=="OFF"){
    document.getElementById("spammer").value="ON";
-     spam();}
+  }
 }
   </script>
 </html>
-
-
-
-
